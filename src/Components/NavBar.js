@@ -8,7 +8,7 @@ function Navbar() {
         <h1>
       <Link to = "/transactions">Transactions</Link>
       </h1>
-      <button>
+      <button className="bttn">
         <Link to ="transactions/new">New Transaction</Link>
       </button>
     </div>

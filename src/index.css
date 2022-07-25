@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #004346;
+background-image: url("https://www.transparenttextures.com/patterns/fake-luxury.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+color:rgb(216, 236, 227);
+font-size: 25px;
+font-family:Chakra Petch ;
 }
 
 code {
@@ -17,9 +24,11 @@ code {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(18, 130, 48);
+  background: #09BC84;
   color: white;
   font-family: VT323-Regular;
+  /* text-decoration: none; */
+
 }
 .Nav-list {
   width: 40%;
@@ -27,3 +36,13 @@ code {
   justify-content: center;
   align-items: center;
   }
+  .bttn {
+    width: "50px"
+  }
+  .New {
+    border: 5px solid #51ba0b;
+  }
+  .Transactions{
+    border: 5px solid #62d814;
+  }
+  

@@ -63,6 +63,7 @@ function TransactionEditForm() {
           placeholder="Name"
           required
         />
+        <br/>
         {/* <label htmlFor="url">URL:</label>
         <input
           id="url"
@@ -73,7 +74,7 @@ function TransactionEditForm() {
           placeholder="http://"
           onChange={handleTextChange}
         /> */}
-        <label htmlFor="date">Date</label>
+        <label htmlFor="date">Date: </label>
         <input
           id="date"
           type="text"
@@ -82,7 +83,8 @@ function TransactionEditForm() {
           placeholder="Date"
           onChange={handleTextChange}
         />
-        <label for="amount">Amount</label>
+        <br/>
+        <label for="amount">Amount: </label>
         <input
           id="amount"
           type="number"
@@ -93,6 +95,7 @@ function TransactionEditForm() {
           max = "1000"
           onChange={handleTextChange}
         />
+        <br/>
         {/* <label htmlFor="isFavorite">Favorite:</label>
         <input
           id="isFavorite"
@@ -101,7 +104,7 @@ function TransactionEditForm() {
           checked={transaction.isFavorite} */}
         {/* /> */}
         
-        <label htmlFor="from">From</label>
+        <label htmlFor="from">From: </label>
         <textarea
           id="from"
           name="from"

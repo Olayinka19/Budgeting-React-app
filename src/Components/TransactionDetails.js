@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const API = process.env.REACT_APP_API_URL;
-
+// This is what connects the front end to the backend.
 function TransactionDetails() {
   const [transaction, setTransaction] = useState({});
   let { index } = useParams();
@@ -31,7 +31,7 @@ function TransactionDetails() {
   return (
     <article>
       <h3>
-        {transaction.isFavorite ? <span>⭐️</span> : null} {transactions.name}
+        {transaction.isFavorite ? <span>⭐️</span> : null} {transaction.name}
       </h3>
       <h5>
         <span>

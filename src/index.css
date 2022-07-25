@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Nav {
+
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(18, 130, 48);
+  color: white;
+  font-family: VT323-Regular;
+}
+.Nav-list {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }

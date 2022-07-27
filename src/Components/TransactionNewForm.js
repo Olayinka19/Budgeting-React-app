@@ -10,29 +10,23 @@ function TransactionNewForm() {
     date: "",
     amount: "",
     from: "",
-    // description: "",
+    
   });
   const navigate = useNavigate();
 
   const addTransaction = () => {
     axios.post(`${API}/transactions`, transaction)
-      .then(response => navigate(`/transactions`)) // happy path! only happens if above request worked
-      .catch(error => console.error(error)) // bad path! happens when our request fails!
+      .then(response => navigate(`/transactions`)) 
+      .catch(error => console.error(error)) 
   };
-  /* We need a function to SEND our DATA to the DATABASE
-    1. Get a handle on our data
-    2. send a POST request to our DB
-    3. < What happens after we succeed? >
-  */
-  const handleTextChange = (event) => {
+  
+  function handleTextChange  (event) {
     setTransaction({ ...transaction, [event.target.id]: event.target.value });
   };
 
-//   const handleCheckboxChange = () => {
-//     setTransaction({ ...transaction, isFavorite: !transaction.isFavorite });
-//   };
 
-  const handleSubmit = (event) => {
+
+  function handleSubmit (event) {
     event.preventDefault();
     addTransaction();
   };
@@ -49,6 +43,16 @@ function TransactionNewForm() {
           required
         />
         <br />
+        <label htmlFor="name">Month: </label>
+        <input
+          id="month"
+          value={transaction.month}
+          type="text"
+          onChange={handleTextChange}
+          placeholder="month"
+          required
+        />
+        <br></br>
          <label htmlFor="date">Date: </label>
         <input
           id="date"
@@ -65,7 +69,7 @@ function TransactionNewForm() {
           type="number"
           required
           value={transaction.amount}
-          placeholder="0"
+          placeholder="$$$"
           min = "-300"
           max = "3000"
           onChange={handleTextChange}

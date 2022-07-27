@@ -1,24 +1,29 @@
 import { Link } from "react-router-dom";
 
+
+
 function Transaction({ transaction, index }) {
   return (
+ 
     <tr>
       <td>
-        {transaction.isFavorite ? (
-          <span>⭐️</span>
+        {transaction.name ? (
+          <span>{transaction.month}</span>
         ) : (
           <span>&nbsp; &nbsp; &nbsp;</span>
         )}
       </td>
+      
       <td>
-        <a href={transaction.url} target="_blank" rel="noreferrer">
-          {transaction.name}
-        </a>
+           {transaction.name}
       </td>
+      <td> {transaction.amount} </td>
+     
       <td>
-        <Link to={`/transactions/${index}`}>✏️</Link>
+        <Link to={`/transactions/${index}`}>☞</Link>
       </td>
     </tr>
+    
   );
 }
 

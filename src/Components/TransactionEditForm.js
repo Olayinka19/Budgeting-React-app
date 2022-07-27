@@ -20,9 +20,9 @@ function TransactionEditForm() {
     setTransaction({ ...transaction, [event.target.id]: event.target.value });
   };
 
-//   const handleCheckboxChange = () => {
-//     setTransaction({ ...transaction, isFavorite: !transaction.isFavorite });
-//   };
+  const handleNumberChange = (event) => {
+    setTransaction({ ...transaction, [event.target.id]: event.target.value});
+  };
   // we need a function to SEND our UPDATED transaction to the DB
   useEffect(() => {
     axios.get(`${API}/transactions/${index}`)
@@ -64,16 +64,16 @@ function TransactionEditForm() {
           required
         />
         <br/>
-        {/* <label htmlFor="url">URL:</label>
+        <label htmlFor="month">Month:</label>
         <input
-          id="url"
+          id="month"
+          value={transaction.month}
           type="text"
-          pattern="http[s]*://.+"
-          required
-          value={transaction.url}
-          placeholder="http://"
           onChange={handleTextChange}
-        /> */}
+          placeholder="Month"
+          required
+        />
+        <br></br>
         <label htmlFor="date">Date: </label>
         <input
           id="date"
@@ -96,13 +96,7 @@ function TransactionEditForm() {
           onChange={handleTextChange}
         />
         <br/>
-        {/* <label htmlFor="isFavorite">Favorite:</label>
-        <input
-          id="isFavorite"
-          type="checkbox"
-          onChange={handleCheckboxChange}
-          checked={transaction.isFavorite} */}
-        {/* /> */}
+
         
         <label htmlFor="from">From: </label>
         <textarea
@@ -110,7 +104,7 @@ function TransactionEditForm() {
           name="from"
           value={transaction.from}
           onChange={handleTextChange}
-          placeholder="Describe why you bookmarked this site"
+          placeholder="Type Here"
         />
         <br />
 

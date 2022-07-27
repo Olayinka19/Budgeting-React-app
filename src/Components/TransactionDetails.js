@@ -4,11 +4,10 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const API = process.env.REACT_APP_API_URL;
-// This is what connects the front end to the backend.
 function TransactionDetails() {
   const [transaction, setTransaction] = useState({});
   let { index } = useParams();
-  // this is whatever the value of our id in the params is
+
   const navigate = useNavigate();
 
   useEffect(
@@ -17,7 +16,6 @@ function TransactionDetails() {
         .get(`${API}/transactions/${index}`)
         .then((response) => setTransaction(response.data))
         .catch((error) => navigate(`/error-page`));
-      // this could navigate to any route that we didnt define really... but we should navigate to something appropriate we dont have like `/404` or `/error`
     },[index]
   );
 
@@ -29,19 +27,17 @@ function TransactionDetails() {
 
   };
   return (
-    <article>
-      <h3>
-        {transaction.isFavorite ? <span>⭐️</span> : null} {transaction.name}
-      </h3>
-      <h5>
-        <span>
-          <a href={transaction.url}>{transaction.name}</a>
-        </span>{" "}
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        {transaction.url}
-      </h5>
-      <h6>{transaction.category}</h6>
-      <p>{transaction.description}</p>
+    <article className="showP">
+      <h2>Name: {transaction.name}</h2>
+      <hr></hr>
+      <h2>Month: {transaction.month}</h2>
+      <hr></hr>
+      <h3>Date: {transaction.date}</h3>
+      <hr></hr>
+      <h3>Amount: {transaction.amount}</h3>
+      <hr></hr>
+      <h3>From: {transaction.from}</h3>
+      <hr></hr>
       <div className="showNavigation">
         <div>
           {" "}

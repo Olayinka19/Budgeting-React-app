@@ -5,12 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background-color: #bcc7c7;
+   background-color: #c6d0d0;
 background-image: url("https://www.transparenttextures.com/patterns/fake-luxury.png"); 
 
 color:rgb(14, 13, 13);
 font-size: 25px;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/* font-family:Pacifico; */
 }
 
 code {
@@ -47,3 +47,21 @@ code {
   .showP {
     border: 5px solid #62d814;
   }
+  .link {
+ text-decoration: none;
+}
+.link:hover {
+  background: rgb(186, 210, 6);
+  color:rgb(238, 243, 243)
+}
+.link.hover {
+  background-color: black;
+}
+.link:hover {
+  transform: scale(1.2);
+  transition-duration: 2.5s;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}

@@ -1,7 +1,7 @@
 
 import './App.css';
 import React from 'react';
-// import { useSpring, animated } from 'react-spring'
+import { useSpring, animated } from 'react-spring'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Edit from "./Pages/Edit";
 import Error from "./Pages/Error";
@@ -10,6 +10,9 @@ import Index from "./Pages/Index";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
 import NavBar from "./Components/NavBar";
+import Transition from './Components/Transition';
+import Animation from './Components/Animation';
+
 
 function App() {
   return (

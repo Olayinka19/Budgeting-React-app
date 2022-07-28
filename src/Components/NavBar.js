@@ -6,13 +6,14 @@ function Navbar() {
   return (
     <div className="Nav">
         <h1>
-      <Link to = "/transactions">Transactions</Link>
+      <Link to = "/transactions" className="link">🅷🅴🅽🅳🆁🅸🆇</Link>
       </h1>
       <button className="bttn">
-        <Link to ="transactions/new">New Transaction</Link>
-      </button>
+        <Link to ="transactions/new" className="link">♚🐊  ᵗ𝐫ⓐ𝓷Ş𝓐ＣŤＩ𝐎ℕ  ☟🔥</Link>
+      </button> 
     </div>
   )
 }
+
 
 export default Navbar

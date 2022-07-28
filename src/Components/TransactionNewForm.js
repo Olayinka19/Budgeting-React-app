@@ -33,7 +33,7 @@ function TransactionNewForm() {
   return (
     <div className="New">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name: </label>
+        <label htmlFor="name">Nαɱҽ: </label>
         <input
           id="name"
           value={transaction.name}
@@ -43,7 +43,7 @@ function TransactionNewForm() {
           required
         />
         <br />
-        <label htmlFor="name">Month: </label>
+        <label htmlFor="name">Mðñ†h: </label>
         <input
           id="month"
           value={transaction.month}
@@ -53,7 +53,7 @@ function TransactionNewForm() {
           required
         />
         <br></br>
-         <label htmlFor="date">Date: </label>
+         <label htmlFor="date">ᗪ卂ㄒ乇: </label>
         <input
           id="date"
           type="date"
@@ -63,7 +63,7 @@ function TransactionNewForm() {
           onChange={handleTextChange}
         />
         <br />
-        <label for="amount">Amount: </label>
+        <label for="amount">Aɱσυɳƚ:  </label>
         <input
           id="amount"
           type="number"
@@ -82,7 +82,7 @@ function TransactionNewForm() {
           onChange={handleCheckboxChange}
           checked={transaction.isFavorite}
         /> */}<br/>
-        <label htmlFor="from">From: </label>
+        <label htmlFor="from">千尺ㄖ爪:</label>
         <textarea
           id="from"
           name="from"

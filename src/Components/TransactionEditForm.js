@@ -54,7 +54,7 @@ function TransactionEditForm() {
   return (
     <div className="Edit">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">𝕹𝖆𝖒𝖊:</label>
         <input
           id="name"
           value={transaction.name}
@@ -64,7 +64,7 @@ function TransactionEditForm() {
           required
         />
         <br/>
-        <label htmlFor="month">Month:</label>
+        <label htmlFor="month">𝕸𝖔𝖓𝖙𝖍:</label>
         <input
           id="month"
           value={transaction.month}
@@ -74,7 +74,7 @@ function TransactionEditForm() {
           required
         />
         <br></br>
-        <label htmlFor="date">Date: </label>
+        <label htmlFor="date">Ðå†ê: </label>
         <input
           id="date"
           type="text"
@@ -84,7 +84,7 @@ function TransactionEditForm() {
           onChange={handleTextChange}
         />
         <br/>
-        <label for="amount">Amount: </label>
+        <label for="amount">ǟʍօʊռȶ: </label>
         <input
           id="amount"
           type="number"
@@ -98,7 +98,7 @@ function TransactionEditForm() {
         <br/>
 
         
-        <label htmlFor="from">From: </label>
+        <label htmlFor="from">千尺ㄖ爪: </label>
         <textarea
           id="from"
           name="from"
@@ -111,7 +111,7 @@ function TransactionEditForm() {
         <input type="submit" />
       </form>
       <Link to={`/transactions/${index}`}>
-        <button>Nevermind!</button>
+        <button>几乇ᐯ乇尺爪丨几ᗪ!</button>
       </Link>
     </div>
   );

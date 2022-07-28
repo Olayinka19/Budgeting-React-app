@@ -35,7 +35,7 @@ function Transactions() {
               return <Transaction key={index} transaction={transaction} index={index} />;
             })}
           </tbody>
-          <h1>Bank Account Total: ${addTotal()}</h1>
+          <h1>(っ◔◡◔)っ ♥ Bank Account Total ♥: ${addTotal()}</h1>
         </table>
       </section>
     </div>

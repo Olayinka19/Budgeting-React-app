@@ -13,7 +13,7 @@ function TransactionEditForm() {
     date: "",
     amount: "",
     from: "",
-    // isFavorite: false,
+  
   });
 
   const handleTextChange = (event) => {
@@ -23,16 +23,13 @@ function TransactionEditForm() {
   const handleNumberChange = (event) => {
     setTransaction({ ...transaction, [event.target.id]: event.target.value});
   };
-  // we need a function to SEND our UPDATED transaction to the DB
+
   useEffect(() => {
     axios.get(`${API}/transactions/${index}`)
       .then(response => setTransaction(response.data))
       .catch(error => console.error(error))
-    /* 
-      1. Get a handle on the data from our user
-      2. Send a request to the DB
-      3. < What do if it succeeds ? >
-    */
+
+   
   }, [index]);
 
   const updateTransaction = () => {

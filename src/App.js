@@ -12,6 +12,8 @@ import Show from "./Pages/Show";
 import NavBar from "./Components/NavBar";
 import Transition from './Components/Transition';
 import Animation from './Components/Animation';
+import Time from './Components/Time';
+import Transition2 from './Components/Transition2';
 
 
 function App() {

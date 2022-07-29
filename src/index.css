@@ -5,10 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background-color: #c6d0d0;
+   /* background-color: #c6d0d0; */
+   /* background-color: #3D315B; */
+   /* background-color: #F8F991; */
+   background-color: #708B75;
 background-image: url("https://www.transparenttextures.com/patterns/fake-luxury.png"); 
 
 color:rgb(14, 13, 13);
+/* color: #444B6E; */
+/* color: #9AB87A; */
+/* color:#F8F991; */
 font-size: 25px;
 /* font-family:Pacifico; */
 }
@@ -23,7 +29,9 @@ code {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: #09BC84;
+  /* background: #09BC84; */
+  /* background: #9AB87A; */
+  background:#444B6E;
   color: white;
   font-family: VT323-Regular;
   /* text-decoration: none; */
@@ -39,7 +47,7 @@ code {
     width: "50px";
   }
   .New {
-    border: 5px solid #51ba0b;
+    border: 5px solid #4e4b4b;
   }
   .Transactions{
     border: 5px solid #62d814;
@@ -64,4 +72,84 @@ code {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
+}
+.showP {
+  width: 100%;
+  height: 600px;
+  border-radius: 9px;
+  margin:10px;
+  background-color: rgb(230, 212, 212);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+.showP0:hover {
+  transform: scale(3.3);
+  transition-duration: 20.5s;
+  -webkit-transform: scale(3.3);
+  -moz-transform: scale(3.3);
+  -ms-transform: scale(3.3);
+  -o-transform: scale(3.3);
+}
+.showP1:hover {
+  background: rgb(186, 210, 6);
+  color:rgb(238, 243, 243)
+}
+.showP1:hover {
+  transform: scale(0.3);
+  transition-duration: 20.5s;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+}
+.showP2:hover {
+  background: rgb(57, 65, 2);
+  color:rgb(238, 243, 243)
+}
+.showP2:hover {
+  transform: scale(3.3);
+  transition-duration: 20.5s;
+  -webkit-transform: scale(3.3);
+  -moz-transform: scale(3.3);
+  -ms-transform: scale(3.3);
+  -o-transform: scale(3.3);
+}
+.showP3:hover {
+  background: rgb(28, 114, 142);
+  color:rgb(238, 243, 243)
+}
+.showP3:hover {
+  transform: scale(0.3);
+  transition-duration: 20.5s;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+}
+
+.showP4:hover {
+  background: rgb(64, 45, 171);
+  color:rgb(238, 243, 243)
+}
+.showP4:hover {
+  transform: scale(3.3);
+  transition-duration: 20.5s;
+  -webkit-transform: scale(3.3);
+  -moz-transform: scale(3.3);
+  -ms-transform: scale(3.3);
+  -o-transform: scale(3.3);
+}
+.showP5:hover {
+  background: rgb(106, 6, 104);
+  color:rgb(238, 243, 243)
+}
+.showP5:hover {
+  transform: scale(0.3);
+  transition-duration: 20.5s;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
 }

@@ -17,6 +17,7 @@ function Transaction({ transaction, index }) {
       <td>
            {transaction.name}
       </td>
+  
       <td> {transaction.amount} </td>
      
       <td>

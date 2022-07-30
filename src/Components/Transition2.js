@@ -16,6 +16,7 @@ function Transition2() {
           width: 180,
           height: 180,
           backgroundColor: 'purple',
+          // backgroundImage:("")
           borderRadius: 16,
           ...styles,
         }}

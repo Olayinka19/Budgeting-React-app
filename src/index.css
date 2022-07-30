@@ -53,7 +53,8 @@ code {
     border: 5px solid #62d814;
   }
   .showP {
-    border: 5px solid #62d814;
+    /* border: 5px solid #62d814; */
+    border: 5px solid #9AB87A;
   }
   .link {
  text-decoration: none;
@@ -152,4 +153,18 @@ code {
   -moz-transform: scale(0.3);
   -ms-transform: scale(0.3);
   -o-transform: scale(0.3);
+}
+main {
+  padding: 0;
+}
+header {
+  position: sticky;
+  top:0;
+  padding:40px;
+  background: lightblue;
+  text-align: center;
+}
+
+content > div {
+  height: 50px;
 }

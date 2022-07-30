@@ -43,6 +43,7 @@ function TransactionNewForm() {
           required
         />
         <br />
+        <hr></hr>
         <label htmlFor="name">Mðñ†h: </label>
         <input
           id="month"
@@ -53,6 +54,7 @@ function TransactionNewForm() {
           required
         />
         <br></br>
+        <hr></hr>
          <label htmlFor="date">ᗪ卂ㄒ乇: </label>
         <input
           id="date"
@@ -63,6 +65,7 @@ function TransactionNewForm() {
           onChange={handleTextChange}
         />
         <br />
+        <hr></hr>
         <label for="amount">Aɱσυɳƚ:  </label>
         <input
           id="amount"
@@ -75,6 +78,7 @@ function TransactionNewForm() {
           onChange={handleTextChange}
         />
        <br/>
+       <hr></hr>
         {/* <label htmlFor="isFavorite">Favorite:</label>
         <input
           id="isFavorite"
@@ -91,6 +95,7 @@ function TransactionNewForm() {
           placeholder="From"
         />
         <br />
+        <hr></hr>
         <input type="submit" />
       </form>
     </div>

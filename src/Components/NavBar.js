@@ -11,7 +11,7 @@ function Navbar() {
       </h1>
       <button className="bttn">
         <Link to ="transactions/new" className="link">♚🐊  ᵗ𝐫ⓐ𝓷Ş𝓐ＣŤＩ𝐎ℕ  ☟🔥</Link>
-        <marquee direction="up">Transaction</marquee>
+        {/* <marquee direction="up">Transaction</marquee> */}
       </button> 
       </main>
     </div>

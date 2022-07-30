@@ -1,8 +1,7 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring';
-import { Link } from "react-router-dom";
 
-{/* <Link to="Transition">Loop</Link> */}
+
 function Transition2() {
     const styles = useSpring({
       loop: true,

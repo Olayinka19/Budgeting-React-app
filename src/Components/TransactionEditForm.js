@@ -20,9 +20,9 @@ function TransactionEditForm() {
     setTransaction({ ...transaction, [event.target.id]: event.target.value });
   };
 
-  const handleNumberChange = (event) => {
-    setTransaction({ ...transaction, [event.target.id]: event.target.value});
-  };
+  // const handleNumberChange = (event) => {
+  //   setTransaction({ ...transaction, [event.target.id]: event.target.value});
+  // };
 
   useEffect(() => {
     axios.get(`${API}/transactions/${index}`)

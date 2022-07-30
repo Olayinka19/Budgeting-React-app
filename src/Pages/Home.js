@@ -1,5 +1,4 @@
 import React from "react";
-import { useSpring, animated } from 'react-spring';
 import Transition from "../Components/Transition";
 import Time from "../Components/Time";
 import Transition2 from "../Components/Transition2";

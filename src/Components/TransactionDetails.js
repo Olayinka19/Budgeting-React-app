@@ -18,7 +18,7 @@ function TransactionDetails() {
         .get(`${API}/transactions/${index}`)
         .then((response) => setTransaction(response.data))
         .catch((error) => navigate(`/error-page`));
-    },[]
+    },[index, navigate]
   );
 
   const handleDelete = () => {

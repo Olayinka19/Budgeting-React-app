@@ -33,9 +33,9 @@ function Transactions() {
           <tbody>
             {transactions.map((transaction, index) => {
           
-              return(
+              return
               <Transaction key={index} transaction={transaction} index={index}/>
-              );
+              ;
               
             })}
           </tbody>

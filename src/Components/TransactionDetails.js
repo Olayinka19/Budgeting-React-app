@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-// import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+
 
 import axios from "axios";
 
@@ -18,7 +18,7 @@ function TransactionDetails() {
         .get(`${API}/transactions/${index}`)
         .then((response) => setTransaction(response.data))
         .catch((error) => navigate(`/error-page`));
-    },[index]
+    },[]
   );
 
   const handleDelete = () => {

@@ -32,7 +32,9 @@ function Transactions() {
           </thead>
           <tbody>
             {transactions.map((transaction, index) => {
-              return <Transaction key={index} transaction={transaction} index={index} />;
+              // eslint-disable-next-line 
+              return( <Transaction key={index} transaction={transaction} index={index}  />);
+              
             })}
           </tbody>
           <h1>(っ◔◡◔)っ ♥ Bank Account Total ♥: ${addTotal()}</h1>

@@ -17,8 +17,9 @@ function Transactions() {
     let total = 0;
     transactions.map((transaction => {
       total += Number(transaction.amount)
+      return total;
     }))
-    return total;
+    
   }
 
   return (
@@ -35,7 +36,7 @@ function Transactions() {
           
               return
               <Transaction key={index} transaction={transaction} index={index}/>
-              ;
+              
               
             })}
           </tbody>

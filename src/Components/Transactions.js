@@ -33,7 +33,9 @@ function Transactions() {
           <tbody>
             {transactions.map((transaction, index) => {
               // eslint-disable-next-line 
-              return(<Transaction key={index} transaction={transaction} index={index}/>);
+              return(
+              <Transaction key={index} transaction={transaction} index={index}/>
+              );
               
             })}
           </tbody>

@@ -79,13 +79,7 @@ function TransactionNewForm() {
         />
        <br/>
        <hr></hr>
-        {/* <label htmlFor="isFavorite">Favorite:</label>
-        <input
-          id="isFavorite"
-          type="checkbox"
-          onChange={handleCheckboxChange}
-          checked={transaction.isFavorite}
-        /> */}<br/>
+    
         <label htmlFor="from">千尺ㄖ爪:</label>
         <textarea
           id="from"

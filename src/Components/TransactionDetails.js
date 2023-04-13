@@ -30,15 +30,15 @@ function TransactionDetails() {
   };
   return (
     <article className="showP">
-      <h2 className="showP1">𝕹𝖆𝖒𝖊: {transaction.name}</h2>
+      <h2 className="showP1">Name: {transaction.name}</h2>
       <hr></hr>
-      <h2 className="showP2">ꪑꪮꪀꪻꫝ: {transaction.month}</h2>
+      <h2 className="showP2">Month: {transaction.month}</h2>
       <hr></hr>
-      <h3 className="showP3">Dαƚҽ: {transaction.date}</h3>
+      <h3 className="showP3">Date: {transaction.date}</h3>
       <hr></hr>
-      <h3 className="showP4">A̾m̾o̾u̾n̾t̾: {transaction.amount}</h3>
+      <h3 className="showP4">Amount: {transaction.amount}</h3>
       <hr></hr>
-      <h3 className="showP5">👌☢  𝒻Ř๏м  🐲😎: {transaction.from}</h3>
+      <h3 className="showP5"> {transaction.from}</h3>
       <hr></hr>
       <div className="showNavigation">
         <div>
@@ -55,7 +55,7 @@ function TransactionDetails() {
         </div>
         <div>
           {" "}
-          <button onClick={handleDelete}>𝕯𝖊𝖑𝖊𝖙𝖊</button>
+          <button onClick={handleDelete}>Delete</button>
         </div>
       </div>
     </article>

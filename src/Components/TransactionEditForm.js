@@ -51,7 +51,7 @@ function TransactionEditForm() {
   return (
     <div className="Edit">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">𝕹𝖆𝖒𝖊:</label>
+        <label htmlFor="name">Name:</label>
         <input
           id="name"
           value={transaction.name}
